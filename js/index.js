@@ -336,6 +336,7 @@ function changeLang(lang) {
   section5Title.innerHTML = lang.section5.title
   section5Desc1.innerHTML = lang.section5.desc1
   section5Desc2.innerHTML = lang.section5.desc2
+  section5Employers.innerHTML = ""
 
   lang.section5.empolyeers.forEach(item => {
     const card = document.createElement("div")
