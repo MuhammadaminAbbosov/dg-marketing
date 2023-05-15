@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@import "../css/components/header";
+@import "../css/components/section1";
+@import "../css/components/section2";
+@import "../css/components/section3";
+@import "../css/components/section4";
+@import "../css/components/section5";
+@import "../css/components/section6";
+@import "../css/components/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/geometry.webp");
+}
+
+.container {
+  min-width: 320px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+section {
+  width: 100%;
+}
+
+.section-btn {
+  // width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgb(185, 14, 223);
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s all;
+  padding: 10px 40px;
+  border-radius: 60px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 10px 25px 0px rgba(224, 87, 255, 0.31),
+      inset 0 0px 0px 0 rgba(255, 255, 255, 0.22),
+      0 233px 233px 0 rgba(255, 255, 255, 0.12) inset;
+    transform: translate(0px, -10px);
+    // box-shadow: inset 0 0px 0px 0 rgba(255,255,255,0.22), 0 233px 233px 0 rgba(255,255,255,0.12) inset;;
+  }
+
+  span {
+    cursor: pointer;
+    &:first-child {
+      font-weight: bold;
+    }
+    &:last-child {
+      opacity: 0.7;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .section-btn {
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-btn {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .section-btn {
+    // width: 330px;
+    width: 100%;
+    span {
+      &:first-child {
+        font-size: 14px;
+      }
+
+      &:last-child {
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
+  }
+}
