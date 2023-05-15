@@ -362,7 +362,9 @@ function changeLang(lang) {
   section6Desc2.innerHTML = lang.section6.desc2;
 
   section6SubTitle1.innerHTML = lang.section6.subTitle1;
-  section6SubTitle2.innerHTML = lang.section6.subTitle2;
+  section6SubTitle2.forEach(item => {
+    item.innerHTML = lang.section6.subTitle2
+  })
 
   section6Img.src = lang.section5.empolyeers[0].img
   section6Perfects.forEach(perfects => {

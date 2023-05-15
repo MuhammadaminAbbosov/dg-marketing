@@ -51,5 +51,5 @@ const section6Img = document.querySelector(".section-6__img")
 const section6Desc1 = document.querySelector(".section-6__desc1");
 const section6Desc2 = document.querySelector(".section-6__desc2");
 const section6SubTitle1 = document.querySelector(".section-6__subTitle1");
-const section6SubTitle2 = document.querySelector(".section-6__subTitle2");
+const section6SubTitle2 = Array.from(document.querySelectorAll(".section-6__subTitle2"))
 const section6Perfects = Array.from(document.querySelectorAll(".perfects"))
