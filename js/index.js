@@ -318,6 +318,7 @@ function changeLang(lang) {
 
   // Section-4
   section4Title.innerHTML = lang.section4.title;
+  section4Companies.innerHTML= ""
 
   lang.section4.companies.forEach((item) => {
     const box = document.createElement("div")
