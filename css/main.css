@@ -416,7 +416,7 @@ header .dropdown .languages li.active-lang {
 }
 .section-5 .container .content.left {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px 30px;
