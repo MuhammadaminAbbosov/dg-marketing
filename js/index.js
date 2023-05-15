@@ -81,19 +81,19 @@ const data = {
           id: 1,
           name: "Abdulaziz Kadirov",
           position: "FOUNDER",
-          img: "",
+          img: "https://images.clickfunnels.com/24/1f8e51a5fc4331bf9b03513b9bb882/Iman-Gadzhi.png",
         },
         {
           id: 2,
           name: "Davlatbek Babakalanov",
           position: "Chief Marketing Officer ",
-          img: "",
+          img: "https://images.clickfunnels.com/24/1f8e51a5fc4331bf9b03513b9bb882/Iman-Gadzhi.png",
         },
         {
           id: 3,
           name: "Elshod Farkhodov",
           position: "CONTENT CREATOR",
-          img: "",
+          img: "https://images.clickfunnels.com/24/1f8e51a5fc4331bf9b03513b9bb882/Iman-Gadzhi.png",
         },
       ],
     },
@@ -361,6 +361,8 @@ function changeLang(lang) {
 
   section6SubTitle1.innerHTML = lang.section6.subTitle1;
   section6SubTitle2.innerHTML = lang.section6.subTitle2;
+
+  section6Img.src = lang.section5.empolyeers[0].img
   section6Perfects.forEach(perfects => {
     perfects.innerHTML =""
     lang.section6.perfects.forEach(item => {
